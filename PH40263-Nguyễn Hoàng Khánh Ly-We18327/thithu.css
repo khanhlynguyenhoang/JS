@@ -1,0 +1,43 @@
+.mySlide{
+display: none;
+}
+.banner{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+.mySlide img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.index{
+    text-align: center;
+}
+#Stop{
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 442px;
+}
+#Start{
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 515px;
+}
+.bai2{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+.bai2 table{
+    margin-left: 361px;
+}
+.bai2 select{
+    width: 171px;
+}
+.bai2 button{
+    margin-left: -102px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}

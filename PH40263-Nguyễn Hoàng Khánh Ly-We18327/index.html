@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="thithu.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="mySlide">
+            <img src="img1.png" alt="">
+            <div class="index">
+                1/5
+            </div>
+        </div>
+        <div class="mySlide">
+            <img src="img2.png" alt="">
+            <div class="index">
+                2/5
+            </div>
+        </div>
+        <div class="mySlide">
+            <img src="img3.png" alt="">
+            <div class="index">
+                3/5
+            </div>
+        </div>
+        <div class="mySlide">
+            <img src="img4.png" alt="">
+            <div class="index">
+                4/5
+            </div>
+        </div>
+        <div class="mySlide">
+            <img src="img5.png" alt="">
+            <div class="index">
+                5/5
+            </div>
+        </div>
+        <button type="submit" onclick="stopSlide()" id="Stop">Stop</button>
+        <button type="submit" onclick="autoSlide()" id="Start">Start</button>
+    </div>
+    <!-- hết bài 1 -->
+    <div class="bai2">
+        <h1>Đăng kí khóa học online</h1>
+        <table>
+            <tr>
+                <td><label for="hoTen">Họ tên</label></td>
+                <td><input type="text" id="hoTen">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+                
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="text" id="email">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sdt">Số điện thoại</label></td>
+                <td><input type="text" id="sdt">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="khoaHoc">Khóa học</label></td>
+                <td>
+                    <select  id="khoaHoc" onchange="khchange()">
+                        <option value="0">Chọn khóa học</option>
+                        <option value="1" class="khoaHoc">Khóa HTML</option>
+                        <option value="2" class="khoaHoc">Khóa JS</option>
+                        <option value="3" class="khoaHoc">Khóa PHP</option>
+                    </select>
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hocPhi">Học phí</label></td>
+                <td><input type="text" id="hocPhi">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><span>Hình thức học</span></td>
+                <td>
+                    <input type="radio" value="taitruong" name="htHoc" class="htHoc" checked>
+                    <label for="">Tại trường</label>
+                    <input type="radio" value="online" name="htHoc" class="htHoc" >
+                    <label for="">Học online</label>
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" onclick="dangKy()">Đăng ký</button></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+<script src="thithu.js"></script>
+</html>

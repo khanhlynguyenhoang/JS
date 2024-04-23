@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+}
+.slide{
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.slide img{
+  width: 1000px;
+  height: 400px;
+}
+.slide button{
+  color: aliceblue;
+  background-color: blue;
+  height: 30px;
+}
+form{
+  text-align: center;
+  margin-left: 400px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  padding: 40px;
+  width: 300px;
+}
+
+td{
+            border: 1px #999 solid;
+            padding: 5px 10px;
+            text-align: center;
+            width: 200px;
+}

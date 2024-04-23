@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="btcn.css">
+</head>
+<style>
+    .test1{
+       color: red;
+   }
+   
+</style>
+<body>
+    <h2>Đăng ký khóa học</h2>
+    <div class="main">
+        <table>
+            <tbody>
+                
+                    <!-- Họ và tên -->
+                    <tr><td>
+                        <label for="hovaten">Họ và tên :</label>      <span class="test1">(*)</span>                      
+                    </td>
+                    <td><input type="text" id="hovaten" placeholder="mời nhập họ và tên " >
+                        <br>
+                        <span class="thongbao"></span>
+                    </td>
+                    </tr> 
+                     <!-- Chứng minh thư -->
+                    <tr><td><label for="cmt">Chứng minh thư :</label><span class="test1">(*)</span></td> 
+                    <td><input type="text" id="cmt" placeholder="mời nhập chứng minh thư" >
+                        <br>
+                        <span class="thongbao"></span>
+                    </td>
+                    </tr>
+                    <!-- Email -->
+                    <tr><td>
+                        <label for="email">Email :</label>  <span class="test1">(*)</span>
+                    </td>
+                    <td><input type="text" id="email" placeholder="mời nhập email " >
+                        <br>
+                        <span class="thongbao"></span>
+                    </td>
+                    </tr>
+                    <!-- Giới tính -->
+                    <tr><td><span>Giới tính :</span><span class="test1">(*)</span></td>
+                    <td><input type="radio" value="nam" name="gioitinh" class="gioitinh" checked>
+                        <label for="nam">Nam</label>
+                        <input type="radio" value="nu" name="gioitinh" class="gioitinh">
+                        <label for="nu">Nữ</label>
+                        
+                    </td></tr>
+                    <!-- Số điện thoại -->
+                    <tr>
+                    <td>
+                        <label for="sdt">Số điện thoại :</label><span class="test1">(*)</span>
+                    </td>
+                    <td><input type="text" id="sdt" placeholder="mời số điện thoại" >
+                        <br>
+                        <span class="thongbao"></span>
+                    </td>
+                    </tr>
+                    <!-- Chọn khóa học -->
+                    <tr><td> <label for="">Chọn khóa học:</label><span class="test1">(*)</span></td>
+                    <td><select id="khoaHoc">
+                        <option hidden value="0" class="kh">mời chọn khóa học</option>
+                        <option value="1" class="kh">Khóa học Digital Marketing</option>
+                        <option value="2" class="kh">Khóa học Marketing Online</option>
+                        <option value="3" class="kh">Khóa học bán hàng Online</option>
+                    </select>
+                    <br>
+                        <span class="thongbao"></span>
+                    </td>
+                    </tr>
+                    <!-- Ngày sinh -->
+                    <tr><td><label for="date">Ngày sinh</label><span class="test1">(*)</span></td>
+                    <td> <input type="date" id="date" >
+                        <br>
+                        <span class="thongbao"></span>
+                    </td></tr>
+                    <!-- Hình thức thanh toán -->
+                    <tr><td><label for="">Hình thức thanh toán</label><span class="test1">(*)</span></td>
+                    <td><select id="thanhtoan">
+                        <option hidden value="0" class="tt">mời chọn hình thức thanh toán</option>
+                        <option value="1" class="tt">Nộp tiền mặt</option>
+                        <option value="2" class="tt">Thanh toán qua ngân hàng</option>
+                    </select>
+                    <br>
+                        <span class="thongbao"></span>
+                    </td>
+                    </tr>
+                    <!-- Submit -->
+                    <tr><td><button type="reset">Resert</button></td>
+                    <td><button type="submit" onclick="kiemTra()">Đặt khóa học</button></td></tr>
+                
+            </tbody>
+        </table>
+        
+    </div>
+    <div id="xacnhan">
+
+    </div>
+</body>
+<script src="btvn.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+
+</html>

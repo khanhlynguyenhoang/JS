@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="banner" >
+        <img src="img1.png" alt="" id="hinh">
+        <button type="submit" onclick="prev()">Prev </button>
+    </div>
+    <div class="bai2">
+        <h1>Hóa đơn</h1>
+        <table>
+            <tr>
+                <td><label for="hoTen">Khách hàng</label></td>
+                <td>
+                    <input type="text" name="" id="hoTen">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="loaiHang">Loại hàng</label></td>
+                <td>
+                    <select id="loaiHang" onchange="thaydoiHang()">
+                        <option value="0">Chọn loại hàng</option>
+                        <option value="1">Loại 1</option>
+                        <option value="2">Loại 2</option>
+                        <option value="3">Loại 3</option>
+                    </select>
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="donGia">Đơn giá</label></td>
+                <td>
+                    <input type="text" name="" id="donGia" onchange="tinhTien()">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="soLuong">Số lượng</label></td>
+                <td>
+                    <input type="number" id="soLuong" onchange="tinhTien()">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="thanhTien">Thành tiền</label></td>
+                <td>
+                    <input type="text" id="thanhTien">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nnh" >Nơi nhận hàng</label></td>
+                <td><div class="nnh" id="noinhanhang" onchange="thaydoinnh()">
+                    <input type="radio" value="noithanh" name="nnh"  checked>
+                    <label for="noithanh">Nội thành</label>
+                    <input type="radio" value="ngoaithanh" name="nnh" >
+                    <label for="ngoaithanh">Ngoại thành</label>
+                    <br>
+                    <span class="thongBao"></span>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pvc">Phí vận chuyển</label></td>
+                <td>
+                    <input type="text" name="" id="pvc">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" onclick="dangKy()">Đặt mua</button></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>

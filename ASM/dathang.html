@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng</title>
+    <link rel="stylesheet" href="dathang.css">
+    <script src="dathang.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bán khóa học</title>
+    <link rel="stylesheet" href="asm.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/logo-moa-newver.png" alt="Lỗi ảnh">
+        </div>
+        <div class="menu">
+            <div class="choose">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                    <li><a href="dathang.html">Đặt hàng</a></li>
+                    
+                </ul>
+            </div>
+                
+                    <form >
+                        <div class="search">
+                    <input type="text" required >
+                    <button type="submit">Tìm kiếm</button>
+                </div>
+                </form>
+        </div>
+       
+    </div>
+</body>
+</html>
+<!-- hết MENU -->
+<body onload="swal('Chào mừng bạn đến với trang đặt hàng')" >
+    
+           
+            <div class="anhbanner">
+            <img src="img/banner-khoa-hoc-digital-marketing-V2.jpg" alt="">     
+            </div>
+            <div class="chu">
+                <h1>Đặt khóa học </h1>
+            </div>
+            <div class="main">
+                <table>
+                    <tbody>
+                        
+                            <!-- Họ và tên -->
+                            <tr><td>
+                                <label for="hovaten">Họ và tên :</label>      <span class="test1">(*)</span>                      
+                            </td>
+                            <td><input type="text" id="hovaten" placeholder="mời nhập họ và tên " >
+                                <br>
+                                <span class="thongbao"></span>
+                            </td>
+                            </tr> 
+                             <!-- Chứng minh thư -->
+                            <tr><td><label for="cmt">Chứng minh thư :</label><span class="test1">(*)</span></td> 
+                            <td><input type="text" id="cmt" placeholder="mời nhập chứng minh thư" >
+                                <br>
+                                <span class="thongbao"></span>
+                            </td>
+                            </tr>
+                            <!-- Email -->
+                            <tr><td>
+                                <label for="email">Email :</label>  <span class="test1">(*)</span>
+                            </td>
+                            <td><input type="text" id="email" placeholder="mời nhập email " >
+                                <br>
+                                <span class="thongbao"></span>
+                            </td>
+                            </tr>
+                            <!-- Giới tính -->
+                            <tr><td><span>Giới tính :</span><span class="test1">(*)</span></td>
+                            <td><input type="radio" value="nam" name="gioitinh" class="gioitinh" checked>
+                                <label for="nam">Nam</label>
+                                <input type="radio" value="nu" name="gioitinh" class="gioitinh">
+                                <label for="nu">Nữ</label>
+                                
+                            </td></tr>
+                            <!-- Số điện thoại -->
+                            <tr>
+                            <td>
+                                <label for="sdt">Số điện thoại :</label><span class="test1">(*)</span>
+                            </td>
+                            <td><input type="text" id="sdt" placeholder="mời số điện thoại" >
+                                <br>
+                                <span class="thongbao"></span>
+                            </td>
+                            </tr>
+                            <!-- Chọn khóa học -->
+                            <tr><td> <label for="">Chọn khóa học:</label><span class="test1">(*)</span></td>
+                            <td><select id="khoaHoc">
+                                <option hidden value="0" class="kh">mời chọn khóa học</option>
+                                <option value="1" class="kh">Khóa học Digital Marketing</option>
+                                <option value="2" class="kh">Khóa học Marketing Online</option>
+                                <option value="3" class="kh">Khóa học bán hàng Online</option>
+                            </select>
+                            <br>
+                                <span class="thongbao"></span>
+                            </td>
+                            </tr>
+                            <!-- Ngày sinh -->
+                            <tr><td><label for="date">Ngày sinh</label><span class="test1">(*)</span></td>
+                            <td> <input type="date" id="date" >
+                                <br>
+                                <span class="thongbao"></span>
+                            </td></tr>
+                            <!-- Hình thức thanh toán -->
+                            <tr><td><label for="">Hình thức thanh toán</label><span class="test1">(*)</span></td>
+                            <td><select id="thanhtoan">
+                                <option hidden value="0" class="tt">mời chọn hình thức thanh toán</option>
+                                <option value="1" class="tt">Nộp tiền mặt</option>
+                                <option value="2" class="tt">Thanh toán qua ngân hàng</option>
+                            </select>
+                            <br>
+                                <span class="thongbao"></span>
+                            </td>
+                            </tr>
+                            <!-- Submit -->
+                            
+                            <tr><td><form ></form><button type="reset">Resert</button></form></td>
+                            <td><button type="submit" onclick="kiemTra()">Đặt khóa học</button></td></tr>
+                        
+                    </tbody>
+                </table>
+                
+            </div>
+            <div id="xacnhan">
+        
+            </div>
+  
+  
+    <div class="footer">
+        <img src="img/white-newlogo-moavn.png" alt="">
+        <span> Địa chỉ:  Số 181 Đường Cao Thắng Nối Dài, Phường 12, Quận 10, Thành phố Hồ Chí Minh, Việt Nam
+            <br>
+- Hotline: 0779 499 343
+<br>
+- Email:kinhdoanh.moavn@gmail.com</span>-
+    </div>
+</body>
+ 
+
+</html>

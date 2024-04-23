@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slide">
+        <button type="submit" onclick="Previous()">Previous</button>
+        <img src="img/1.jpg" alt="" id="hinh">
+        <button type="submit" onclick="Next()">Next</button>
+    </div>
+    <button type="submit" onclick="stop()">stop</button>
+    <p style="text-align: center;" id="chu">1/7</p>
+    <button type="submit" onclick="start()">start</button>
+    </div>
+   <form>
+     <table>
+       <tbody>
+        <tr>
+            <h1>Đăng Kí Thành Viên</h1>
+        </tr> 
+        <tr>
+            <td>Họ tên</td>
+            <td><input type="text" id="HoTen"><span id="loi1"></span></td><br>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" id="Email"><span id="loi2"></span></td><br>
+        </tr>
+        <tr>
+            <td>Số Điện Thoại</td>
+            <td><input type="text" id="SDT"><span id="loi3"></span></td><br>
+        </tr>
+        <tr>
+            <td>User</td>
+            <td><input type="text" id="User"><span id="loi4"></span></td><br>
+        </tr>
+        <tr>
+            <td>Pass</td>
+            <td><input type="password" id="Pass"><span id="loi5"></span></td><br>
+        </tr>
+        <tr>
+            <td>Repss</td>
+            <td><input type="password" id="Repss"><span id="loi6"></span></td><br>
+        </tr>
+        <tr>
+            <td>Bạn biết tôi qua</td>
+            <td><input type="radio" name="banbiet" id="Bgt">Bạn Giới thiệu
+                <input type="radio" name="banbiet" id="Fb">Qua FB
+                </span><span id="loi7"></span></td><br>
+        </tr>
+    </tbody>
+    </table>
+    <button id="btn_submit">Submit</button>
+   </form>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,37 @@
+body{
+    width: 1000px;
+    margin: auto;
+   text-align: center; 
+}
+.main{
+    border: 2px solid black;
+    
+    width: 916px;
+   
+    background-color: honeydew;
+}
+td{
+    padding-left: 50px;
+    border: 1px solid #14b74b;
+}
+.main input[type="text"],select,input[type="date"]{
+    width: 641px;
+    height: 48px;
+}
+.main button{
+    width: 148px;
+    height: 50px;
+    background-color: #14b74b;
+    color: yellow;
+    font-size: 16px;
+}
+.thongbao{
+    color: red;
+}
+#xacnhan{
+    
+    text-align: center;
+}
+#xacnhan td{
+    text-align: center;
+}

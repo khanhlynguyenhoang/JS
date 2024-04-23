@@ -1,0 +1,55 @@
+body{
+    width: 1000px;
+    margin: auto;
+}
+.chudautrang{
+    
+    background-color: honeydew;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.chudautrang h1{
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+.chudautrang h1:hover{
+font-size: 40px;
+    color: #14b74b;}
+.lienhe{
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+}
+.thongtin{
+    margin-left: 20px;
+    background-color: honeydew;
+    width: 378px;
+    align-items: center;
+    justify-content: center;
+}
+.diachi{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.sdt{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.email{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.website{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.website a{
+    color: red;
+    
+    
+}
+.website li{
+    list-style: none;
+}

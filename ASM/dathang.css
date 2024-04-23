@@ -1,0 +1,74 @@
+
+.anhbanner img{
+    height: 206px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+body{
+    width: 1000px;
+    margin: auto;
+   text-align: center; 
+}
+.main{
+    text-align: center;
+    border: 2px solid black;
+    width: 100%;
+    
+}
+td{
+    padding-left: 50px;
+    border: 1px solid #14b74b;
+}
+.main input[type="text"],select,input[type="date"]{
+    width: 641px;
+    height: 48px;
+}
+.main button{
+    width: 148px;
+    height: 50px;
+    background-color: #14b74b;
+    color: yellow;
+    font-size: 16px;
+}
+.thongbao{
+    color: red;
+}
+#xacnhan{
+    height: 141px;
+    text-align: center;
+}
+#xacnhan td{
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 12px;
+}
+ 
+.chu {
+    text-align: center;
+    background-color: #14b74b;
+        height: 66px;
+            margin-top: 8px;
+}
+.chu h1{
+    font-size: 30px;
+    color: white;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+.chu h1:hover{
+    color: yellow;
+}
+h2{
+    box-sizing: border-box;
+    height: 66px;
+    padding-top: 16px;
+    margin-top: 39px;
+    font-size: 30px;
+    background-color: #14b74b;
+    color: white;
+    text-transform: uppercase;
+}
+.test1{
+    color: red;
+}

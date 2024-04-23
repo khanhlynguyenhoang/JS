@@ -1,0 +1,35 @@
+.banner{
+    width: 1000px;
+    margin: auto;
+}
+.banner h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.banner img{
+    width: 100%;
+    height: 600px;
+    /* object-fit: cover; */
+}
+.bai2{
+    width: 1000px;
+    margin: auto;
+    border: 1px solid black;
+    
+}
+.bai2 h1{
+    text-align: center;
+}
+.bai2 table{
+    margin-left: 341px;
+}
+.bai2 button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bai2 table label{
+    margin-right: 10px;
+}
+.thongBao{
+    color: red;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mySlide{
+        display: none;
+    }
+    .mySlide img{
+        width: 400px;
+        height: 400px;
+    }
+</style>
+<body>
+    <div class="banner">
+        <div class="mySlide">
+            <div class="viTri">
+                1/3
+            </div>
+            <img src="Anh-hoat-hinh-de-thuong-cute-nhat-506x600.jpg" alt="">
+            
+        </div>
+        <div class="mySlide">
+            <div class="viTri">
+                2/3
+            </div>
+            <img src="hinh-anh-hoat-hinh-de-thuong-cute-cua-be-gai-600x600.jpg" alt="">
+        </div>
+        <div class="mySlide">
+            <div class="viTri">
+                3/3
+            </div>
+            <img src="hinh-anh-hoat-hinh-de-thuong-cute-dep-nhat.jpg" alt="">
+        </div>
+    </div>
+    <button onclick="nextSlide(-1)">Pre</button>
+    <button onclick="nextSlide(1)">Next</button>
+    <button onclick="autoSlide()">Auto</button>
+    <button onclick="stopSlide()">Stop</button>
+    <select name="" id="" onchange="change()">
+        <option value="">Haf Noi</option>
+        <option value="">Hai Phong</option>
+        <option value="">Nam Dinh</option>
+    </select>
+    <input type="text" name="" id="" onchange="change()">
+</body>
+<script src="slidebanner.js"></script>
+</html>

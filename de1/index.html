@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="anh">
+            <img src="img1.png" alt="" id="hinhAnh">
+        </div>
+        <button type="submit" onclick="prev()">Previous</button>
+        <button type="submit" onclick="next()">Next</button>
+        <button type="submit" onclick="auto()">auto</button>
+        <button type="submit" onclick="stop()">stop</button>
+    </div>
+    <div class="bai2">
+        <h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+        <table>
+            <tr>
+                <td><label for="hoTen">Họ tên</label></td>
+                <td><input type="text" id="hoTen">
+                    <br>
+                <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="text" id="email">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sdt">Số điện thoại</label></td>
+                <td><input type="text" id="sdt">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="user">User</label></td>
+                <td><input type="text" id="user">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pass">Pass</label></td>
+                <td><input type="password" id="pass">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="repass">Repass</label></td>
+                <td><input type="password" id="repass">
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><span>Bạn biết chúng tôi</span></td>
+                <td><input type="radio" value="bgt"  name="biet" class="biet" checked>
+                    <label for="">Bạn giới thiệu</label>
+                    <input type="radio" value="fb"  name="biet" class="biet">
+                    <label for="">Qua FB</label>
+                    <br>
+                    <span class="thongBao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" onclick="dangKy()">Đăng ký</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

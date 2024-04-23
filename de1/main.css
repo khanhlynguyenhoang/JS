@@ -1,0 +1,9 @@
+.banner{
+    width: 1000px;
+    margin: auto;
+}
+.anh img{
+    width: 1000px;
+    height: 350px;
+    object-fit: cover;
+}
